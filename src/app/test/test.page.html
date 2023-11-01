@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title></ion-title>
+  </ion-toolbar>
+
+  <div class="banner">
+      <div class="banner_img">
+          <img src="assets/images/logo.png">
+      </div>
+      <div class="banner_text">
+          <h2>You're registered as ?</h2>
+      </div>
+  </div>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-list lines="none">
+      <ion-item>
+          <div class="item_inner" [routerLink]="['/personal']">
+              <div class="text_box">
+                  <h2>Personal</h2>
+              </div>
+          </div>
+      </ion-item>
+
+      <ion-item>
+          <div class="item_inner" [routerLink]="['/merchant']">
+              <div class="text_box">
+                  <h2>Merchants</h2>
+              </div>
+          </div>
+        </ion-item>
+  </ion-list>
+</ion-content>
