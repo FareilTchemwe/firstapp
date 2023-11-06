@@ -1,16 +1,37 @@
-
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title></ion-title>
+    </ion-toolbar>
 <ion-content fullscreen>
-  <div class="logo-box ion-text-center">
-      <img src="assets/images/favicon.png" class="animated zoomIn delay_2">
-  </div>
+    <div class="form">
+      <p class="text">Choose the operator you wish to use</p>
+      <ion-list lines="none">
+            <ion-item>
+                <div class="item_inner" [routerLink]="['/personal']">
+                    <div class="text_box">
+                        <h2>ORANGE</h2>  
+                    </div>
+                </div>
+            </ion-item>
 
-  <div class="form">
-      <p class="text">Enter your id</p>
-      <ion-list lines="none" class="animated slideInUp delay_2">
-          <ion-item lines="none">
-              <ion-input type="number" placeholder="Enter a 3 digit id"></ion-input>
-              <ion-button slot="end" size="large" shape="round" class="btn">next</ion-button>
-          </ion-item>
-      </ion-list>
-  </div>
+            <ion-item>
+                <div class="item_inner" [routerLink]="['/personal']">
+                    <div class="text_box">
+                        <p>MTN</p>  
+                    </div>
+                </div>
+            </ion-item>
+
+            <ion-item>
+                <div class="item_inner" [routerLink]="['/personal']">
+                    <div class="text_box">
+                        <h2>CAMTEL</h2>  
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </div>
 </ion-content>

@@ -2,10 +2,10 @@
 div,
 .ios,
 .md {
-    --primary: #2172ec;
+    --primary: #0c4daf;
     --white: #fff;
     --text-light: #c9ced4;
-    --bg-color: #10c3ff;
+    --bg-color: #0c4daf;
     --transparent: rgba(0, 0, 0, 0);
 }
 
@@ -14,6 +14,10 @@ ion-header {
     background: var(--bg-color);
     &::after {
         display: none !important;
+    }
+    .main-icon-size{
+        width: 50%;
+        margin: 2em 0 2em 7em;
     }
     ion-toolbar {
         --background: none;
@@ -81,6 +85,7 @@ ion-header {
         }
     }
     .banner_text {
+        margin: 2.5em 0 2.5em 0;
         width: 100%;
         background: var(--bg-color);
         padding: 15px 20px;

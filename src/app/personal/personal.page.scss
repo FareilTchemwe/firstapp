@@ -3,8 +3,8 @@ div,
 .md,
 * {
     --white: #fff;
-    --primary: #10c3ff;
-    --bg-color:#10c3ff;
+    --primary: #0c4daf;
+    --bg-color:#0c4daf;
     --green_color: #00ff5a;
     --gray: #D5D5D5;
     --transparent: rgba(0, 0, 0, 0);
@@ -319,23 +319,46 @@ ion-content {
 .form {
     margin-top: 50px;
     ion-list {
+        padding-top: 12px;
+        margin: 0;
+        width: 100%;
+        background: none !important;
         ion-item {
-            padding: 10px 0;
-            border-radius: 40px;
-            h2 {
-                margin: 0;
-                min-width: 55px;
-                font-size: 1rem;
-                font-weight: 500;
-            }
-            ion-input {
-                font-size: 1rem !important;
-            }
-            .button {
-                &.btn {
-                    max-width: 95px;
-                    height: 40px;
-                    margin: 0 7px;
+            --inner-padding-end: 0px;
+        --inner-min-height: unset !important;
+        --padding-start: 0;
+        --background: var(--transparent);
+        width: calc(100% - 23px);
+        margin: 0;
+        border-radius: 40px;
+        padding: 9px;
+        overflow: hidden;
+        position: relative;
+        background: var(--white);
+        margin-bottom: 11px;
+
+            .text_box {
+                width: 100%;
+                padding-top: .5em;
+                h2 {
+                    margin-left: 6em;
+                    padding: 0;
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: var(--bg-color);
+                    align-items: center;
+                    text-align: center;
+                
+                }
+                p {
+                    margin-left: 6.5em;
+                    padding: 0;
+                    font-weight: 800;
+                    font-size: 1.2rem;
+                    color: var(--bg-color);
+                    align-items: center;
+                    text-align: center;
+                
                 }
             }
         }

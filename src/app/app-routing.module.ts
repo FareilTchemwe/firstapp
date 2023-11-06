@@ -18,10 +18,6 @@ const routes: Routes = [
     path: 'merchant',
     loadChildren: () => import('./merchant/merchant.module').then( m => m.MerchantPageModule)
   },
-  {
-    path: 'personal',
-    loadChildren: () => import('./personal/personal.module').then( m => m.PersonalPageModule)
-  },
 ];
 @NgModule({
   imports: [
