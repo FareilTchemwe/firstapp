@@ -22,10 +22,6 @@ const routes: Routes = [
     path: 'personal',
     loadChildren: () => import('./personal/personal.module').then( m => m.PersonalPageModule)
   },
-  {
-    path: 'final',
-    loadChildren: () => import('./final/final.module').then( m => m.FinalPageModule)
-  }
 ];
 @NgModule({
   imports: [

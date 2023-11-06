@@ -32,10 +32,6 @@ const routes: Routes = [
         loadChildren: () => import('../merchant/merchant.module').then(m => m.MerchantPageModule)
       },
       {
-        path: 'final',
-        loadChildren: () => import('../final/final.module').then(m => m.FinalPageModule)
-      },
-      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'
