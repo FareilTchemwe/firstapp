@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title></ion-title>
+  </ion-toolbar>
+<ion-content fullscreen>
+  <div class="form">
+    <p class="text">Choose the duration</p>
+    <ion-list lines="none">
+          <ion-item>
+              <div class="item_inner" [routerLink]="['/month-orange']">
+                  <div class="text_box">
+                      <h2>MONTH</h2>  
+                  </div>
+              </div>
+          </ion-item>
+
+          <ion-item>
+            <div class="item_inner" [routerLink]="['/week-orange']">
+                <div class="text_box">
+                    <h2>WEEK</h2>  
+                </div>
+            </div>
+        </ion-item>
+
+          <ion-item>
+              <div class="item_inner" [routerLink]="['/day-orange']">
+                  <div class="text_box">
+                      <h2>DAY</h2>  
+                  </div>
+              </div>
+          </ion-item>
+      </ion-list>
+  </div>
+</ion-content>

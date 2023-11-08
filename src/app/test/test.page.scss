@@ -77,7 +77,7 @@ ion-header {
 
 .banner {
     .banner_img {
-         primary: var(--ion-color-primary);
+         --primary: var(--ion-color-primary);
         img {
             max-width: 400px;
             margin: 0 auto;
@@ -104,6 +104,12 @@ ion-header {
 
 ion-content {
     --background: var(--bg-color);
+    .text {
+        margin: 2em;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
 }
 
 ion-list {

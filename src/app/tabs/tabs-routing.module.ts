@@ -27,10 +27,7 @@ const routes: Routes = [
         path: 'personal',
         loadChildren: () => import('../personal/personal.module').then(m => m.PersonalPageModule)
       },
-      {
-        path: 'merchant',
-        loadChildren: () => import('../merchant/merchant.module').then(m => m.MerchantPageModule)
-      },
+      
       {
         path: '',
         redirectTo: '/tabs/tab1',
