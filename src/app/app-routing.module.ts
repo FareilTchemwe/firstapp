@@ -74,6 +74,10 @@ const routes: Routes = [
     path: 'camtel-form',
     loadChildren: () => import('./camtel-form/camtel-form.module').then( m => m.CamtelFormPageModule)
   },
+  {
+    path: 'succes',
+    loadChildren: () => import('./succes/succes.module').then( m => m.SuccesPageModule)
+  },
   
 ];
 @NgModule({
