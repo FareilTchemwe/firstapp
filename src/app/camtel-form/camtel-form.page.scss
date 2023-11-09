@@ -104,6 +104,9 @@ ion-header {
 
 ion-content {
     --background: var(--bg-color);
+    .form {
+        margin-top: 10em;
+    }
     .text {
         margin: 2em;
         text-align: center;
