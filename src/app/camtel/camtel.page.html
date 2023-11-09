@@ -1,13 +1,39 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>camtel</ion-title>
+<ion-header>
+  <ion-toolbar class="toolbar-color">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title></ion-title>
   </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">camtel</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content fullscreen>
+  <div class="logo-box ion-text-center">
+    <img src="assets/icon/payment-method-pay-svgrepo-com.svg" class="animated zoomIn delay_2 center_img">
+  </div>
+
+  <div class="form">
+    <ion-list lines="none" class="animated slideInUp delay_2">
+      <ion-item lines="none">
+        <ion-input type="number" placeholder="Receiver phone number"></ion-input>
+        <img src="assets/icon/camtel.png" class="input-icon">
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="form">
+    <ion-list lines="none" class="animated slideInUp delay_2">
+      <ion-item lines="none">
+        <ion-input type="text" placeholder="Bundle"></ion-input>
+        <img src="assets/icon/camtel.png" class="input-icon">
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="form">
+    <ion-list lines="none" class="animated slideInUp delay_2">
+      <ion-item lines="none">
+        <ion-input type="number" placeholder="Payer phone number"></ion-input>
+        <ion-button slot="end" size="large" shape="round" class="btn">next</ion-button>
+      </ion-item>
+    </ion-list>
+  </div>
+
 </ion-content>

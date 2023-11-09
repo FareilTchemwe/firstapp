@@ -2,7 +2,7 @@
 .md {
     --primary: #0fc874;
     --secondary: #93C152;
-    --bg-color: #ebf3f9;
+    --bg-color: #0c4daf;
     --bg-color2: #f8f9fd;
     --text-light: #A3BCCF;
     --text-light3: #d9e3ea;
@@ -106,7 +106,6 @@ ion-header {
             --padding-end: 0 !important;
             --padding-start: 0 !important;
             ion-back-button {
-                background: url("../../assets/images/Gopool/ic_back.png");
                 --color: var(--text-black) !important;
                 --icon-font-size: 1.6rem !important;
                 background-repeat: no-repeat;
@@ -225,59 +224,67 @@ ion-header {
     }
 }
 
-ion-list {
-    margin: 0;
-    background: none;
-    padding: 0;
-    padding-top: 20px;
-    overflow: hidden;
-    overflow-y: auto;
-    ion-item {
-        --inner-padding-end: 0px;
-        --inner-min-height: unset !important;
-        --min-height: unset !important;
-        --padding-start: 0;
-        --background: var(--transparent) !important;
-        padding: 10px 10px;
-        background: var(--white);
-        width: calc(100% - 20px);
-        margin: 0 auto;
-        margin-bottom: 12px;
-        border-radius: 10px;
-        align-items: center;
-        .img_box {
-            min-width: 47px;
-            height: 47px;
+ion-content {
+    .text {
+        margin: 2em;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+
+    ion-list {
+        margin: 0;
+        background: none;
+        padding: 0;
+        padding-top: 20px;
+        overflow: hidden;
+        overflow-y: auto;
+        ion-item {
+            --inner-padding-end: 0px;
+            --inner-min-height: unset !important;
+            --min-height: unset !important;
+            --padding-start: 0;
+            --background: var(--transparent) !important;
+            padding: 10px 10px;
+            background: var(--white);
+            width: calc(100% - 20px);
+            margin: 0 auto;
+            margin-bottom: 12px;
             border-radius: 10px;
-            margin: 0;
-            margin-right: 20px;
-        }
-        ion-label {
-            margin: 0;
-            white-space: normal;
-            h2 {
+            align-items: center;
+            .img_box {
+                min-width: 47px;
+                height: 47px;
+                border-radius: 10px;
                 margin: 0;
-                color: var(--text-dark);
-                font-size: 0.95rem;
-                padding-bottom: 6px;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                overflow: hidden;
-                font-weight: 500;
+                margin-right: 20px;
             }
-            h3 {
+            ion-label {
                 margin: 0;
-                color: var(--text-light2);
-                font-size: .8rem;
-                font-weight: 400;
-                span {
-                    &.message {
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
-                        overflow: hidden;
-                    }
-                    &.end {
-                        min-width: fit-content;
+                white-space: normal;
+                h2 {
+                    margin: 0;
+                    color: var(--text-dark);
+                    font-size: 0.95rem;
+                    padding-bottom: 6px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    font-weight: 500;
+                }
+                h3 {
+                    margin: 0;
+                    color: var(--text-light2);
+                    font-size: .8rem;
+                    font-weight: 400;
+                    span {
+                        &.message {
+                            text-overflow: ellipsis;
+                            white-space: wrap;
+                        }
+                        &.end {
+                            min-width: fit-content;
+                        }
                     }
                 }
             }
